@@ -2,6 +2,26 @@ cabal-version: 3.0
 
 name: hasherize
 version: 0.0.0.0
+synopsis: Hash digests for files and directories
+category: Filesystem, Hash
+
+description:
+    This library can produce a hash for filesystem content, which can be
+    either a file or a directory.
+
+    The name of the file or directory is not included in the hash digest.
+    The digest of a directory is based on the names and contents of the
+    files contained therein.
+    No other filesystem metadata (timestamps, permissions, etc.) is
+    included in the digest.
+
+license: Apache-2.0
+license-file: license.txt
+
+author: Chris Martin
+maintainer: Chris Martin, Julie Moronuki
+
+homepage: https://github.com/typeclasses/hasherize
 
 extra-source-files: *.md
 
